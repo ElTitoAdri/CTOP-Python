@@ -1,0 +1,52 @@
+**** Cuenta atrás *****
+
+Inicio
+Definir numero Como Entero
+Escribir ("Introduce un número entre 5 y 50 para iniciar la cuenta atrás:")
+Leer numero
+Si numero < 5 O numero > 50 Entonces
+    Escribir ("Número fuera de rango. Por favor, introduce un número entre 5 y 50.")
+Sino
+    Mientras numero >= 0 Haz
+        Escribir numero
+        numero = numero - 1
+    FinMientras
+    Escribir ("¡Fin!")
+FinSi
+Fin
+***** Fin del programa *****
+
+***** Comparar_Cantidades *****
+
+Inicio
+Definir cant1, cant2 Como Real
+Escribir ("Introduce la primera cantidad:")
+Leer cant1
+Escribir ("Introduce la segunda cantidad:")
+Leer cant2
+Si cant1 > cant2 Entonces
+    Escribir ("La primera cantidad es mayor que la segunda.")
+Sino Si cant1 < cant2 Entonces
+    Escribir ("La segunda cantidad es mayor que la primera.")
+Sino
+    Escribir ("Ambas cantidades son iguales.")
+FinSi
+Fin
+***** Fin del programa *****
+
+***** Basta *****
+
+Inicio
+Definir palabra Como Cadena
+Definir array palabras[] Como Cadena
+Mientras palabra != "basta" o palabra != "" Haz
+    Escribir ("Introduce una palabra (o 'basta' para terminar):")
+    palabras[Longitud(palabras)] = palabra
+    Mientras palabra en palabras Haz
+        Escribir (palabra)
+        Escribir ()
+        Escribir ("Haz terminado.")
+    FinMientras
+FinMientras
+Fin
+***** Fin del programa *****
